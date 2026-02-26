@@ -41,10 +41,11 @@ cidr_blocks = ["0.0.0.0/0"]
 
 }
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket"
+  bucket = "akshaya-tf-bucket-123456"
 
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
   }
 }
+
