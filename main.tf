@@ -38,4 +38,13 @@ to_port = 22
 protocol = "tcp"
 cidr_blocks = ["0.0.0.0/0"]
 }
+
+}
+resource "aws_s3_bucket" "example" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
 }
